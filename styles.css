@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(/images/bodyback.jpg) center center no-repeat;
+  height: 100%;
+  background-size: auto;
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  color: #4d494d;
+}
+
+/* ..............NAVIGATION........... */
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  border-radius: 0px 0px 50px 50px;
+}
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+.navigation a:hover {
+  background: #c06751;
+  color: #000000;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+}
+
+/* ..............CONTAINER............ */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-radius: 50px 50px 0px 0px;
+  min-height: 100vh;
+  margin: 2rem 0 2rem 0;
+}
+.container,
+footer,
+.navigation,
+aside,
+.main__content {
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+  border: 3px solid rgba(255, 255, 255, 0.31);
+}
+
+/* ..............ASIDE................ */
+aside,
+.main__content {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.container {
+  background: rgba(255, 255, 255, 0.65);
+}
+aside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ..............WRAPPER.............. */
+.main__wrapper {
+  display: flex;
+}
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  margin: 2rem 0;
+  width: 100%;
+}
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+.welcomeHead {
+  justify-content: center;
+}
+
+/* ..............PORTRAIT.............. */
+.portrait {
+  height: 300px;
+  background: #ffffff;
+  border-radius: 150px 75px 175px 15px;
+}
+.imageHolder {
+  display: inline-block;
+}
+.contact__details-item,
+.social__details-item {
+  display: flex;
+  margin-top: 24px;
+}
+.contact__details-item .icon,
+.social__details-item .icon {
+  width: 28px;
+  margin-right: 0.3rem;
+  color: #924836;
+}
+h1 {
+  color: #924836;
+  padding-top: 2rem;
+  font-size: 35px;
+}
+
+/* ..............MAIN................. */
+.main {
+  text-align: center;
+  margin: 1rem;
+}
+.main p {
+  font-size: 19px;
+  margin: 1.5rem;
+}
+.main__content {
+  width: 100%;
+}
+
+h2,
+.h3_title {
+  color: #924836;
+  margin-top: 1rem;
+}
+
+/* ..............FOOTER............... */
+footer {
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.65);
+}
+.footer {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.footer h4 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #4d494d;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.footer li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+.footer li a {
+  color: #4d494d;
+}
+.footer li a:hover {
+  color: #924836;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #4d494d;
+}
+
+.ulexp_list li,
+.uledu_list li,
+.skills {
+  padding: 1rem;
+  text-align: left;
+  margin: 2rem;
+  /* list-style-type: none; */
+}
+
+/* ..............Progress bar......... */
+.skills {
+  width: fit-content;
+  margin: auto;
+}
+.progress-bar {
+  margin-bottom: 1rem;
+}
+.progress-bar__wrapper {
+  background: lightgrey;
+  width: 300px;
+  height: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.progress-bar__fill {
+  background: rgb(0, 128, 128);
+  height: 100%;
+  border-radius: 10px;
+}
+.progress-bar:first-child .progress-bar__fill {
+  width: 65%;
+}
+.progress-bar:nth-child(2) .progress-bar__fill {
+  width: 45%;
+}
+.progress-bar:nth-child(3) .progress-bar__fill {
+  width: 15%;
+}
+.progress-bar:last-child .progress-bar__fill {
+  width: 10%;
+}
+
+/* ..............FORM.............. */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type="text"],
+select,
+textarea {
+  display: grid;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  resize: vertical;
+}
+form #subject {
+  height: 11vh;
+}
+input[type="submit"] {
+  background-color: #924836;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: auto;
+}
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+
+/* ..............MEDIA/RESPONSIVE.............. */
+@media all and (max-width: 480px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+  .main {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  .main__wrapper {
+    background: transparent;
+  }
+  .contact__details,
+  .social__details {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer ul {
+    align-self: flex-start;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .main__wrapper {
+    flex-wrap: wrap;
+  }
+  .contact__details,
+  .social__details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+  }
+}
