@@ -30,6 +30,7 @@ body {
   text-decoration: none;
   display: block;
   padding: 1em;
+  color: #4d494d;
 }
 .navigation a:hover {
   background: #c06751;
