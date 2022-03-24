@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url(/images/bodyback.jpg) center center no-repeat;
+  background: url(images/bodyback.jpg) center center no-repeat;
   height: 100%;
   background-size: auto;
   min-height: 100vh;
